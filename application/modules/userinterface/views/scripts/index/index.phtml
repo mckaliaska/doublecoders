@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Первая веб Операционная система</title>  
+        <link rel="stylesheet" href="../css/main/style.css">
+        <script src="http://www.shevrono.com.ua/templates/siteground-j15-18/js/jq.js"></script>
+        <script>            
+            $(document).ready(function(){
+                
+                $('#desctop').bind('click', function(){
+                    $('.startlist').hide();
+                });
+                
+                $('#start').bind('click',function(){
+                    $('.startlist').toggle();
+                });                 
+                                    
+
+            });
+        </script>
+    </head>
+    <body>
+        <div id ="desctop"></div>
+        <div id ="stertmenu">
+            <ul id="leftculumn">
+                <li id ="start">W
+                    <ul class="startlist" style="display:none;">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </li>
+                <li>|</li>
+            </ul>
+            <ul id="rightculumn">
+                <li>10:00</li>
+            </ul>
+        </div>
+    </body>
+</html>
