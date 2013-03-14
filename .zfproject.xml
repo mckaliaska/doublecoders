@@ -15,29 +15,7 @@
       <formsDirectory enabled="false"/>
       <layoutsDirectory enabled="false"/>
       <modelsDirectory/>
-      <modulesDirectory>
-        <moduleDirectory moduleName="userinterface">
-          <configsDirectory enabled="false"/>
-          <controllersDirectory>
-            <controllerFile controllerName="Index">
-              <actionMethod actionName="index"/>
-            </controllerFile>
-          </controllersDirectory>
-          <formsDirectory enabled="false"/>
-          <layoutsDirectory enabled="false"/>
-          <modelsDirectory/>
-          <servicesDirectory enabled="false"/>
-          <viewsDirectory>
-            <viewScriptsDirectory>
-              <viewControllerScriptsDirectory forControllerName="Index">
-                <viewScriptFile forActionName="index"/>
-              </viewControllerScriptsDirectory>
-            </viewScriptsDirectory>
-            <viewHelpersDirectory/>
-            <viewFiltersDirectory/>
-          </viewsDirectory>
-        </moduleDirectory>
-      </modulesDirectory>
+      <modulesDirectory enabled="false"/>
       <servicesDirectory enabled="false"/>
       <viewsDirectory>
         <viewScriptsDirectory>
@@ -85,15 +63,6 @@
             <testApplicationActionMethod forActionName="index"/>
           </testApplicationControllerFile>
         </testApplicationControllerDirectory>
-        <testApplicationModulesDirectory>
-          <testApplicationModuleDirectory forModuleName="userinterface">
-            <testApplicationControllerDirectory>
-              <testApplicationControllerFile forControllerName="Index">
-                <testApplicationActionMethod forActionName="index"/>
-              </testApplicationControllerFile>
-            </testApplicationControllerDirectory>
-          </testApplicationModuleDirectory>
-        </testApplicationModulesDirectory>
       </testApplicationDirectory>
       <testLibraryDirectory/>
     </testsDirectory>
