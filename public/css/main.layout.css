@@ -1,0 +1,22 @@
+#header{
+    height:200px;
+    background-image: url('../img/tambur.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logoPartner{
+    float:left;
+    margin-right:20px;
+    margin-bottom:5px;
+}
+
+.imgCenter{
+   margin: 20px;
+   margin-left:0px;
+}
+.imgRight{
+    float:right;
+    margin: 20px;
+    margin-right:0px;
+}
