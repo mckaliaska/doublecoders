@@ -4,12 +4,57 @@
     <title>Экскурсии Украины</title>
     <meta charset="utf-8">
     <!-- Bootstrap -->
-    <?php echo $this->headLink()->prependStylesheet($this->baseUrl().'bootstrap/css/bootstrap.min.css'); ?>
-    <?php echo $this->headLink()->prependStylesheet($this->baseUrl().'css/main.layout.css'); ?>
+    <?php echo $this->headLink()->prependStylesheet('http://excursion.no-ip.info/bootstrap/css/bootstrap.min.css'); ?>
+    <?php echo $this->headLink()->prependStylesheet('http://excursion.no-ip.info/css/main.layout.css'); ?>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="http://excursion.no-ip.info//bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://excursion.no-ip.info/bootstrap/js/bootstrap.min.js"></script>
   </head>
   <body>
+      <div class="container-fluid">
+    <div class="row-fluid">
+    <div class="span12" id ="header">
+      <!--Body content-->
+    </div>
+  </div>
+</div>
+  <div class="container">
+    <div class="btn-toolbar">
+  <div class="btn-group">
+    <a class="btn" href="http://excursion.no-ip.info/"><i>Главная</i></a>
+    <a class="btn" href="#"><i>Новости</i></a>
+    <a class="btn" href="#"><i>Последнее добавленное</i></a>
+    <a class="btn" href="#"><i>Акции</i></a>
+    <a class="btn" href="#"><i>О компании</i></a>
+    <a class="btn" href="#"><i>Справка</i></a>
+    <a class="btn" href="#"><i>Галерея</i></a>
+    <a class="btn" href="#"><i>Регистрация</i></a>
+    <a class="btn" href="#"><i>Главная</i></a>
+       <?php if (Zend_Auth::getInstance()->hasIdentity()) {
+        $url = $this->url(array('controller'=>'auth', 'action'=>'logout'));
+        // если пользователь авторизирован, показываем ему кнопку "Выход"
+        
+       echo "<a class=\"btn\" href=\"{$url}\">Выход</a>";
+       
+       }
+       else {
+           echo '<a class="btn" href="/auth/login"><i>Вход</i></a>';
+       }
+       ?>
+    
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span9">
+      <!--Body content-->
+    </div>
+        <div class="span3">
+      <form class="navbar-search pull-left">
+  <input type="text" class="search-query" placeholder="Поиск экскурсии">
+</form>
+    </div>  
+  </div>
+</div>
       <?php echo $this->layout()->content; ?>
   </body>
 </html>

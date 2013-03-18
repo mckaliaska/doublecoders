@@ -20,3 +20,10 @@
     margin: 20px;
     margin-right:0px;
 }
+#login{
+    padding:20px;
+    border: 1px solid #ccc;
+    width: 17em;
+    margin:0 auto;
+    border-radius: 15px;
+}
