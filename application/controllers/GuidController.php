@@ -15,7 +15,7 @@ class GuidController extends Zend_Controller_Action
 
     public function mostAction()
     {
-        echo 'helo';
+        //echo 'helo';
     }
 
 
