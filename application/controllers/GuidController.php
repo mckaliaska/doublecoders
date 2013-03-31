@@ -18,8 +18,16 @@ class GuidController extends Zend_Controller_Action
         //echo 'helo';
     }
 
+    public function getAction()
+    {
+        // action body
+        echo '11111111111111';
+    }
+
 
 }
+
+
 
 
 

@@ -1,0 +1,16 @@
+<!-- <textarea name="text" id ="editText"></textarea> -->
+<form>
+    <input type="hidden" value="<?php echo $this->excursion['id']?>">
+    <input type="text" value="<?php echo $this->excursion['name']?>"><br>
+    <textarea name="title">
+        <?php echo $this->excursion['description']?>
+    </textarea>
+    
+    <textarea name="body" id ="editText">
+        <?php echo $this->excursion['text']?>
+    </textarea>
+</form>
+
+<?php
+///echo $this->form;
+//Zend_Debug::Dump($this->excursion);

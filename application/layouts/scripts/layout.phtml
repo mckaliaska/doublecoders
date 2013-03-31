@@ -6,8 +6,36 @@
     <!-- Bootstrap -->
     <?php echo $this->headLink()->prependStylesheet('http://excursion.no-ip.info/bootstrap/css/bootstrap.min.css'); ?>
     <?php echo $this->headLink()->prependStylesheet('http://excursion.no-ip.info/css/main.layout.css'); ?>
+    
+    <!--lrte -->
+    <?php echo $this->headLink()->prependStylesheet('http://excursion.no-ip.info/lrte/css/smoothness/jquery-ui-1.8.13.custom.css'); ?>
+    <?php echo $this->headLink()->prependStylesheet('http://excursion.no-ip.info/lrte/css/elrte.min.css'); ?>
+    
+    <!-- Bootstrap -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="http://excursion.no-ip.info/bootstrap/js/bootstrap.min.js"></script>
+
+    <!--lrte -->
+    <script src="http://excursion.no-ip.info/lrte/js/jquery-1.6.1.min.js"           type="text/javascript" charset="utf-8"></script>
+    <script src="http://excursion.no-ip.info/lrte/js/jquery-ui-1.8.13.custom.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://excursion.no-ip.info/lrte/js/elrte.min.js"                  type="text/javascript" charset="utf-8"></script>
+    <script src="http://excursion.no-ip.info/lrte/js/i18n/elrte.ru.js"              type="text/javascript" charset="utf-8"></script>
+    <!-- Инициализация текстового редактора -->
+    <script type="text/javascript" charset="utf-8">
+      $().ready(function() {
+          var opts = {
+              lang         : 'ru',   // set your language
+              styleWithCSS : false,
+              height       : 400,
+              toolbar      : 'maxi'
+          };
+          // create editor
+         $('#editText').elrte(opts);
+      });
+ </script>
+  
+  
+  
   </head>
   <body>
       <div class="container-fluid">

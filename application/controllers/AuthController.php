@@ -70,7 +70,7 @@ class AuthController extends Zend_Controller_Action
             if ($result->isValid()) {
                 // используем адаптер для извлечения оставшихся данных о пользователе
                 $identity = $authAdapter->getResultRowObject();
-                 
+                
                 // получаем доступ к хранилищу данных Zend
                 $authStorage = $auth->getStorage();
                  
@@ -83,7 +83,7 @@ class AuthController extends Zend_Controller_Action
                 // Используем библиотечный helper для редиректа
                 // на controller = admin, action = redact
                 if($identity->role == "guide"){
-                    $this->_helper->redirector('most', 'guid');
+                   $this->_helper->redirector('most', 'guid');
                 }
                 
             } 

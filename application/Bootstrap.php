@@ -32,7 +32,8 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $acl->addResource('sign', 'help');
         $acl->addResource('guid');
         $acl->addResource('most', 'guid');
-        
+        $acl->addResource('excursion');
+        $acl->addResource('edit', 'excursion');
         // гость (неавторизированный пользователь)
         $acl->addRole('guest');
          
@@ -45,7 +46,8 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         // разрешаем гостю просматривать ресурс auth и его подресурсы
         $acl->allow('guest', 'auth', array('login', 'logout'));
         $acl->allow('guest', 'help', array('sign'));
-        $acl->allow('guide', 'guid', array('most'));
+        $acl->allow('guide', 'guid', array('most', 'get'));
+        $acl->allow('guide', 'excursion', array('edit'));
         $fc = Zend_Controller_Front::getInstance();
          
         // регистрируем плагин с названием AccessCheck, в который передаём

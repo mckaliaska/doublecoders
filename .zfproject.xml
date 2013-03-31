@@ -27,17 +27,25 @@
         <controllerFile controllerName="Guid">
           <actionMethod actionName="index"/>
           <actionMethod actionName="most"/>
+          <actionMethod actionName="get"/>
+        </controllerFile>
+        <controllerFile controllerName="Excursion">
+          <actionMethod actionName="index"/>
+          <actionMethod actionName="edit"/>
         </controllerFile>
       </controllersDirectory>
       <formsDirectory>
         <formFile formName="Login"/>
+        <formFile formName="ExcEdit"/>
       </formsDirectory>
       <layoutsDirectory>
         <layoutScriptsDirectory>
           <layoutScriptFile layoutName="layout"/>
         </layoutScriptsDirectory>
       </layoutsDirectory>
-      <modelsDirectory/>
+      <modelsDirectory>
+        <modelFile modelName="Excursion"/>
+      </modelsDirectory>
       <modulesDirectory>
         <moduleDirectory moduleName="guide">
           <configsDirectory enabled="false"/>
@@ -103,6 +111,15 @@
           <viewControllerScriptsDirectory forControllerName="Guid">
             <viewScriptFile forActionName="most"/>
           </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Guid">
+            <viewScriptFile forActionName="get"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Excursion">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Excursion">
+            <viewScriptFile forActionName="edit"/>
+          </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>
         <viewFiltersDirectory enabled="false"/>
@@ -156,6 +173,11 @@
           <testApplicationControllerFile forControllerName="Guid">
             <testApplicationActionMethod forActionName="index"/>
             <testApplicationActionMethod forActionName="most"/>
+            <testApplicationActionMethod forActionName="get"/>
+          </testApplicationControllerFile>
+          <testApplicationControllerFile forControllerName="Excursion">
+            <testApplicationActionMethod forActionName="index"/>
+            <testApplicationActionMethod forActionName="edit"/>
           </testApplicationControllerFile>
         </testApplicationControllerDirectory>
         <testApplicationModulesDirectory>
